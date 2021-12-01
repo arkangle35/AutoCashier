@@ -1,3 +1,4 @@
+#Michael Zhang, Reece Mason and Owen Lehtovaara
 import tkinter as tk
 from tkinter import ttk
 import tkinter.messagebox 
@@ -60,7 +61,7 @@ class CafFinance(tk.Tk):
     self.dimes = tk.DoubleVar()
     self.dimes.trace_add("write", self.calculate)
     self.dimeEntry = tk.Entry(self, textvariable=self.dimes, width="7", justify=tk.RIGHT, bg="lightgrey")
-    self.dimeEntry.place(relx=0, rely=0.065)
+    self.dimeEntry.place(relx=0, rely=0.06)
     self.dimeLabel = tk.Label(self, text="Dimes:", bg="#44505A", fg='white').place(relx=0.07, rely=0.06)
     self.dimeWorthLab = tk.Label(self, text=self.dimes.get())
     self.dimeWorthLab.place(relx=0.14, rely=0.06)
@@ -68,7 +69,7 @@ class CafFinance(tk.Tk):
     self.quarters = tk.DoubleVar()
     self.quarters.trace_add("write", self.calculate)
     self.quarterEntry = tk.Entry(self, textvariable=self.quarters, width="7", justify=tk.RIGHT, bg="lightgrey")
-    self.quarterEntry.place(relx=0, rely=0.1)
+    self.quarterEntry.place(relx=0, rely=0.09)
     self.quarterLabel = tk.Label(self, text="Quarters:", bg="#44505A", fg='white').place(relx=0.07, rely=0.09)
     self.quarterWorthLab = tk.Label(self, text=self.quarters.get())
     self.quarterWorthLab.place(relx=0.14, rely=0.09)
@@ -76,7 +77,7 @@ class CafFinance(tk.Tk):
     self.loonies = tk.DoubleVar()
     self.loonies.trace_add("write", self.calculate)
     self.loonieEntry = tk.Entry(self, textvariable=self.loonies, width="7", justify=tk.RIGHT, bg="lightgrey")
-    self.loonieEntry.place(relx=0, rely=0.135)
+    self.loonieEntry.place(relx=0, rely=0.12)
     self.loonieLabel = tk.Label(self, text="Loonies:", bg="#44505A", fg='white').place(relx=0.07, rely=0.12)
     self.loonieWorthLab = tk.Label(self, text=self.loonies.get())
     self.loonieWorthLab.place(relx=0.14, rely=0.12)
@@ -84,7 +85,7 @@ class CafFinance(tk.Tk):
     self.toonies = tk.DoubleVar()
     self.toonies.trace_add("write", self.calculate)
     self.toonieEntry = tk.Entry(self, textvariable=self.toonies, width="7", justify=tk.RIGHT, bg="lightgrey")
-    self.toonieEntry.place(relx=0, rely=0.17)
+    self.toonieEntry.place(relx=0, rely=0.15)
     self.toonieLabel = tk.Label(self, text="Toonies:", bg="#44505A", fg='white').place(relx=0.07, rely=0.15)
     self.toonieWorthLab = tk.Label(self, text=self.toonies.get())
     self.toonieWorthLab.place(relx=0.14, rely=0.15)
@@ -116,7 +117,7 @@ class CafFinance(tk.Tk):
     self.fifty = tk.DoubleVar()
     self.fifty.trace_add("write", self.calculate)
     self.fiftyEntry = tk.Entry(self, textvariable=self.fifty, width="7", justify=tk.RIGHT, bg="lightgrey")
-    self.fiftyEntry.place(relx=0, rely=0.275)
+    self.fiftyEntry.place(relx=0, rely=0.27)
     self.fiftyLabel = tk.Label(self, text="$50 Bill:", bg="#44505A", fg='white').place(relx=0.07, rely=0.27)
     self.fiftyWorthLab = tk.Label(self, text=self.fifty.get())
     self.fiftyWorthLab.place(relx=0.14, rely=0.27)
@@ -300,6 +301,7 @@ class CafFinance(tk.Tk):
     self.clearButton = tk.Button(self, text="Clear All", command=(self.delete()))
     self.clearButton.place(relx=0.042, rely=0.47)
 
+
   def calculate(self, *args): #calculations  
   #Register A
     #nickels
@@ -432,5 +434,4 @@ class CafFinance(tk.Tk):
 if __name__ == "__main__":
   app = CafFinance()
   app.mainloop()
-  
   
