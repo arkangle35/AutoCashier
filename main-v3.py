@@ -1,4 +1,4 @@
-#Michael Zhang, Reece Mason and Owen Lehtovaara, and Jared Dobbyn
+# Michael Zhang, Reece Mason, Owen Lehtovaara and Jared Dobbyn
 import tkinter as tk
 from tkinter import ttk
 import tkinter.messagebox
